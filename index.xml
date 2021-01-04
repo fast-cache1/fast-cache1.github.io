@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>小马的进阶之路</title>
+    <link>https://fast-cache1.github.io/</link>
+    <description>Recent content on 小马的进阶之路</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Tue, 03 Nov 2020 09:44:13 +0800</lastBuildDate><atom:link href="https://fast-cache1.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>运营</title>
+      <link>https://fast-cache1.github.io/posts/%E8%BF%90%E8%90%A5/</link>
+      <pubDate>Tue, 03 Nov 2020 09:44:13 +0800</pubDate>
+      
+      <guid>https://fast-cache1.github.io/posts/%E8%BF%90%E8%90%A5/</guid>
+      <description>运营的通用能力： 1.科学的做事方法 2.文案基础能力 【如何写文案、互联网思维】 3.懂用户分析、调研 4.做竞品分析 新媒体运营、用户运营 文案能力、用户思维、社群运营、数据分析
+产品分析报告 竞品调研报告 用户体验报告
+图书外卖： 书店开始送外卖，你会下单吗？ https://www.sohu.com/a/383825410_99944060</description>
+    </item>
+    
+    <item>
+      <title>我们</title>
+      <link>https://fast-cache1.github.io/posts/%E6%88%91%E4%BB%AC/</link>
+      <pubDate>Sat, 24 Oct 2020 11:07:51 +0800</pubDate>
+      
+      <guid>https://fast-cache1.github.io/posts/%E6%88%91%E4%BB%AC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>我</title>
+      <link>https://fast-cache1.github.io/posts/%E6%88%91/</link>
+      <pubDate>Sat, 24 Oct 2020 11:06:53 +0800</pubDate>
+      
+      <guid>https://fast-cache1.github.io/posts/%E6%88%91/</guid>
+      <description>学C++： c++ primer</description>
+    </item>
+    
+    <item>
+      <title>Myfirst</title>
+      <link>https://fast-cache1.github.io/posts/myfirst/</link>
+      <pubDate>Sat, 24 Oct 2020 11:05:57 +0800</pubDate>
+      
+      <guid>https://fast-cache1.github.io/posts/myfirst/</guid>
+      <description>md写图片的格式： MFC框架 MFC是一种C++类库，利用面向对象的方法封装了windows API。
+MFC初试 项目学习： 1.已下项目学习 2.采用C++和socket实现的网络通信上位机，具体用的是socket阻塞和多线程方式实现。可以监控基于网络通信的设备通信，四种通信方式可任意选择，包括：TCP 服务端，TCP客户端，UDP服务端，UDP客户端；通信部分代码封装成了库，可以方便移植。https://blog.csdn.net/hill_guo/article/details/89671153?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~all~sobaiduend~default-1-89671153.nonecase&amp;amp;utm_term=vs使用mfc编程写tcp通讯&amp;amp;spm=1000.2123.3001.4430</description>
+    </item>
+    
+    <item>
+      <title>My First Post1</title>
+      <link>https://fast-cache1.github.io/posts/my-first-post1/</link>
+      <pubDate>Thu, 22 Oct 2020 14:37:24 +0800</pubDate>
+      
+      <guid>https://fast-cache1.github.io/posts/my-first-post1/</guid>
+      <description>WSADATA 这个结构被用来存储被WSAStartup函数调用后返回的Windows Sockets数据，包含Winsock.dll执行的数据。 struct WSAData{ WORD mVersion; //dll期望调用者使用的Windows Sockets规范的版本 WORD wHighVersion; //dll支持的Windows Sockets规范的最高版本 char szDescription[WSADESCRIPTION_LEN+1];//对Windows Socket实现的描述，包括制造商标识符 char szSystemStatus[WSASYSSTATUS];//相关的状态和配置信息 unsigned short iMaxSockets; //单个进程能够打开的socket的最大数目 unsigned short iMaxUdpDg； //应用程序能够发送或接收的最大用户数据包协议的数据包大小 char *lpVendorInfo; //z指向销售商的数据结构的指针 }  makeword（2，0） //定义套接字版本 是将两个byte型合并成一个word型，一个在高8位(b)，一个在低8位(a)  ::WSAStartup(WORD wVersionRequested, LPWSADATA lpWSAData); // 初始化套接字库  第一个参数是Windows Sockets API提供的调用方可使用发最高版本号。高位字节指出副版本(修正)号，低位字节指明主版本号。 第二个参数是指向WSADATA结构的指针 &amp;amp;  ::socket(AF_INET, SOCK_DGRAM, 0); // 定义套接字类型 两种类型的套接字 面向文件的和面向网络的 面向文件的 家族名AF_LOCAL addressfamily:UNIX AF_UNIX 面向网络的 家族名 AF_INET 地址家族：因特网。  socketaddr_in //创建套接字地址类型  struct sockaddr_in{ short sin_family; unsigned short sin_port; struct in_addr sin_addr; char sin_zero[8]; } struct in_addr{ union{ struct {u_char s_b1,s_b2,s_b3,s_b4;} S_un_b; struct {u_short s_w1,s_w2;}	S_un_w; u_long S_addr; }S_un; } TCP套接字的名字SOCK_STREAM UDP套接字的名字SOCK_DGRAM datagram 在Linux和Windows网络编程时需要用到htons和htonl函数，用来将主机字节顺序转换为网络字节顺序。大尾端，小尾端  ::bind(s, (sockaddr*)&amp;amp;addr, sizeof(addr)); // 绑定对应的地址跟端口号  bind(SOCKET s, const struct sockaddr FAR *addr, int namelen); // 注意强制转换 第一个参数是待绑定的套接字，第二个参数是标志绑定在哪,第三个参数是绑定空间所占大小 struct sockaddr { unsignedshort sa_family; /*address family*/ char sa_data[14]; /*up to 14 bytes of direct address*/ }; 但一般编程中并不直接针对此数据结构操作，而是使用另一个与sockaddr等价的数据结构sockaddr_in。 把socket与这三个要素绑定一起。填值的时候使用sockaddr_in结构，而作为函数的参数传入的时候转换成sockaddr结构就行了，毕竟都是16个字符长。  ::sendto(s,&amp;ldquo;Hello Client\n&amp;rdquo;,15,0,(SOCKADDR*)&amp;amp;addr2,sizeof(SOCKADDR)) int sendto( SOCKET s, const char FAR* buf, int size, int flags, const struct sockaddr FAR* to, int tolen); 参数说明： s： 套接字 buf：待发送数据的缓冲区 size：缓冲区长度 flags：调用方式标志位, 一般为0, 改变Flags，将会改变Sendto发送的形式 addr：（可选） 指针，指向目的套接字的地址 tolen：addr所指地址的长度 如果成功，则返回发送的字节数，失败则返回SOCKET_ERROR。  recvfrom(s, buffer, 10, 0, (sockaddr*)&amp;amp;addr2, &amp;amp;n) !</description>
+    </item>
+    
+    <item>
+      <title>我是My First Post</title>
+      <link>https://fast-cache1.github.io/posts/my-first-post/</link>
+      <pubDate>Thu, 22 Oct 2020 14:03:15 +0800</pubDate>
+      
+      <guid>https://fast-cache1.github.io/posts/my-first-post/</guid>
+      <description>我 ###关键词 马斯克 特斯拉 电池 苹果 华为 海思 iPhone为什么电池容量设计那么小？ 一、内部复杂的硬件，比如增加更好的震动反馈，3D touch，加入硕大的Taptic Engine线性致动马达， 向电池索取空间 二、iphone迟迟没有快充功能
+Hello Hugo This is.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://fast-cache1.github.io/posts/%E8%BF%90%E8%90%A5%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fast-cache1.github.io/posts/%E8%BF%90%E8%90%A5%E7%AC%94%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
